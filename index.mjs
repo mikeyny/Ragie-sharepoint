@@ -37,6 +37,7 @@ console.log(`\nSearching for: "${userQuery}"\n`);
 // 1. Retrieve relevant chunks from Ragie
 const response = await ragie.retrievals.retrieve({
   query: userQuery,
+  partition: "financial-reports",
 //   filter: {
 //     // optionally filter by metadata or partition
 //     source: { $eq: "sharepoint" }
